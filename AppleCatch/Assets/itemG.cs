@@ -10,7 +10,7 @@ public class itemG : MonoBehaviour
     float spin = 1.0f;
     float delta = 0;
     int ratio = 2;
-    float speed = -0.03f;
+    float speed = -0.05f;
 
     public void SetP(float spin,float speed,int ratio)
     {
@@ -29,7 +29,7 @@ public class itemG : MonoBehaviour
     void Update()
     {
         this.delta += Time.deltaTime;
-        if (this.delta > this.spin)
+        if (this.delta >= this.spin)
         {
             this.delta = 0;
             GameObject item;
